@@ -1,0 +1,17 @@
+{
+    "buildNpmdoc":"cordova-plugin-dialogs",
+    "devDependencies": {
+        "cordova-plugin-dialogs": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "name":"npmdoc-cordova-plugin-dialogs",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-cordova-plugin-dialogs.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh"
+    },
+    "version": "0.0.1"
+}
