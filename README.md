@@ -1,9 +1,11 @@
 # api documentation for  [cordova-plugin-dialogs (v1.3.2)](https://github.com/apache/cordova-plugin-dialogs#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-cordova-plugin-dialogs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cordova-plugin-dialogs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cordova-plugin-dialogs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cordova-plugin-dialogs)
 #### Cordova Notification Plugin
 
-[![NPM](https://nodei.co/npm/cordova-plugin-dialogs.png?downloads=true)](https://www.npmjs.com/package/cordova-plugin-dialogs)
+[![NPM](https://nodei.co/npm/cordova-plugin-dialogs.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/cordova-plugin-dialogs)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-cordova-plugin-dialogs/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-cordova-plugin-dialogs_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-cordova-plugin-dialogs/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-cordova-plugin-dialogs/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-cordova-plugin-dialogs/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-cordova-plugin-dialogs/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-cordova-plugin-dialogs/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-cordova-plugin-dialogs/build/screenCapture.npmPackageListing.svg)
 
@@ -75,33 +77,26 @@
     "license": "Apache-2.0",
     "maintainers": [
         {
-            "name": "bowserj",
-            "email": "bowserj@apache.org"
+            "name": "bowserj"
         },
         {
-            "name": "csantanapr",
-            "email": "csantana23@gmail.com"
+            "name": "csantanapr"
         },
         {
-            "name": "filmaj",
-            "email": "maj.fil@gmail.com"
+            "name": "filmaj"
         },
         {
-            "name": "purplecabbage",
-            "email": "purplecabbage@gmail.com"
+            "name": "purplecabbage"
         },
         {
-            "name": "shazron",
-            "email": "shazron@gmail.com"
+            "name": "shazron"
         },
         {
-            "name": "stevegill",
-            "email": "stevengill97@gmail.com"
+            "name": "stevegill"
         }
     ],
     "name": "cordova-plugin-dialogs",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/apache/cordova-plugin-dialogs.git"
@@ -114,16 +109,6 @@
     "version": "1.3.2"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module cordova-plugin-dialogs](#apidoc.module.cordova-plugin-dialogs)
-
-
-
-# <a name="apidoc.module.cordova-plugin-dialogs"></a>[module cordova-plugin-dialogs](#apidoc.module.cordova-plugin-dialogs)
 
 
 
