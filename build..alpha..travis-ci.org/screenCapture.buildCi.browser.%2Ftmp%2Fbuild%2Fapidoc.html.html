@@ -54,12 +54,168 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.cordova-plugin-dialogs">module cordova-plugin-dialogs</a><ol>
 
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-dialogs.</span>index</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-plugin-dialogs.index">module cordova-plugin-dialogs.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-dialogs.index.alert">
+            function <span class="apidocSignatureSpan">cordova-plugin-dialogs.index.</span>alert
+            <span class="apidocSignatureSpan">(success, fail, args, env)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-dialogs.index.confirm">
+            function <span class="apidocSignatureSpan">cordova-plugin-dialogs.index.</span>confirm
+            <span class="apidocSignatureSpan">(success, fail, args, env)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-dialogs.index.prompt">
+            function <span class="apidocSignatureSpan">cordova-plugin-dialogs.index.</span>prompt
+            <span class="apidocSignatureSpan">(success, fail, args, env)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.cordova-plugin-dialogs" id="apidoc.module.cordova-plugin-dialogs">module cordova-plugin-dialogs</a></h1>
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-plugin-dialogs.index" id="apidoc.module.cordova-plugin-dialogs.index">module cordova-plugin-dialogs.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-dialogs.index.alert" id="apidoc.element.cordova-plugin-dialogs.index.alert">
+        function <span class="apidocSignatureSpan">cordova-plugin-dialogs.index.</span>alert
+        <span class="apidocSignatureSpan">(success, fail, args, env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">alert = function (success, fail, args, env) {
+    var result = new PluginResult(args, env);
+
+    if (Object.keys(args).length &lt; 3) {
+        result.error("Notification action - alert arguments not found.");
+    } else {
+        showDialog(args, "CustomAsk", result);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## navigator.notification.alert
+
+Shows a custom alert or dialog box.  Most Cordova implementations use a native
+dialog box for this feature, but some platforms use the browser's `alert`
+function, which is typically less customizable.
+
+    navigator.notification.<span class="apidocCodeKeywordSpan">alert</span>(message, alertCallback, [title], [buttonName])
+
+- __message__: Dialog message. _(String)_
+
+- __alertCallback__: Callback to invoke when alert dialog is dismissed. _(Function)_
+
+- __title__: Dialog title. _(String)_ (Optional, defaults to `Alert`)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-dialogs.index.confirm" id="apidoc.element.cordova-plugin-dialogs.index.confirm">
+        function <span class="apidocSignatureSpan">cordova-plugin-dialogs.index.</span>confirm
+        <span class="apidocSignatureSpan">(success, fail, args, env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">confirm = function (success, fail, args, env) {
+    var result = new PluginResult(args, env);
+
+    if (Object.keys(args).length &lt; 3) {
+        result.error("Notification action - confirm arguments not found.");
+    } else {
+        showDialog(args, "CustomAsk", result);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### BlackBerry 10 Quirks
+`navigator.notification.alert('text', callback, 'title', 'text')` callback parameter is passed the
+ number 1.
+
+## navigator.notification.confirm
+
+Displays a customizable confirmation dialog box.
+
+    navigator.notification.<span class="apidocCodeKeywordSpan">confirm</span>(message, confirmCallback, [title], [buttonLabels])
+
+- __message__: Dialog message. _(String)_
+
+- __confirmCallback__: Callback to invoke with index of button pressed (1, 2, or 3) or when the dialog is dismissed without a button
+ press (0). _(Function)_
+
+- __title__: Dialog title. _(String)_ (Optional, defaults to `Confirm`)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-dialogs.index.prompt" id="apidoc.element.cordova-plugin-dialogs.index.prompt">
+        function <span class="apidocSignatureSpan">cordova-plugin-dialogs.index.</span>prompt
+        <span class="apidocSignatureSpan">(success, fail, args, env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">prompt = function (success, fail, args, env) {
+    var result = new PluginResult(args, env);
+
+    if (Object.keys(args).length &lt; 3) {
+        result.error("Notification action - prompt arguments not found.");
+    } else {
+        showDialog(args, "JavaScriptPrompt", result);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Both native-blocking `window.confirm()` and non-blocking `navigator.notification.confirm()` are available.
+
+## navigator.notification.prompt
+
+Displays a native dialog box that is more customizable than the browser's `prompt` function.
+
+    navigator.notification.<span class="apidocCodeKeywordSpan">prompt</span>(message, promptCallback, [title], [buttonLabels], [
+defaultText])
+
+- __message__: Dialog message. _(String)_
+
+- __promptCallback__: Callback to invoke with index of button pressed (1, 2, or 3) or when the dialog is dismissed without a button
+ press (0). _(Function)_
+
+- __title__: Dialog title _(String)_ (Optional, defaults to `Prompt`)
+...</pre></li>
+    </ul>
+
 
 </div>
 
