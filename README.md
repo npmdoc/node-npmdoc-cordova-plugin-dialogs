@@ -1,4 +1,7 @@
-# api documentation for  [cordova-plugin-dialogs (v1.3.2)](https://github.com/apache/cordova-plugin-dialogs#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-cordova-plugin-dialogs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cordova-plugin-dialogs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cordova-plugin-dialogs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cordova-plugin-dialogs)
+# npmdoc-cordova-plugin-dialogs
+
+#### basic api documentation for  [cordova-plugin-dialogs (v1.3.2)](https://github.com/apache/cordova-plugin-dialogs#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-cordova-plugin-dialogs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cordova-plugin-dialogs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cordova-plugin-dialogs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cordova-plugin-dialogs)
+
 #### Cordova Notification Plugin
 
 [![NPM](https://nodei.co/npm/cordova-plugin-dialogs.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/cordova-plugin-dialogs)
@@ -106,7 +109,8 @@
         "test": "npm run jshint"
     },
     "types": "./types/index.d.ts",
-    "version": "1.3.2"
+    "version": "1.3.2",
+    "bin": {}
 }
 ```
 
